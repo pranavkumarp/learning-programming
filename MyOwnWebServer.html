@@ -1,0 +1,44 @@
+------------------------------------------------------------------------------
+Pranav's Webserver - Installation
+--------------------------------------------------------------------------------------
+Apache Webserver 
+----------------
+1. Download Apache Webserver
+	- https://www.apachelounge.com/download/
+	- Download the file httpd-2.4.48-win64-VS16.zip  
+	- Copy the file to C:\ and unzip the file.
+		(If any error, Run the cmd as Administrator)
+2. Install Apache Webserver
+	- Run cmd as Administrator
+	- cd C:\Apache24\bin>
+	- httpd -k install
+3. Start Apache Webserver
+	- Run cmd as Administrator
+	- cd C:\Apache24\bin>
+	- httpd.exe -k start 
+4. Check whether it works.
+	- Open Chrome/Any browser
+	- Type localhost and hit enter.
+	- The Page should return "It works!"
+5. WANT Your site !!!! ---- www.pranav.com
+	- open below file 
+		c:\Windows\System32\Drivers\etc\hosts
+	- Add the below line and save the file. If not able to save, Run Notepad as Administrator and save.
+		127.0.0.1 www.pranav.com
+6. Check whether it works.
+	- Open Chrome/Any browser
+	- Type www.pranav.com and hit enter.
+	- The Page should return "It works!"
+------------------------------------------------------------------------------
+Work with your own site.
+------------------------
+	Working Directory and page.
+	Working directory = C:\Apache24\htdocs
+	Working file = index.html
+
+	- Modify the file index.html as below
+		<H1>!!! Pranav's Website !!!</H1>
+	- open www.pranav.com in the browser and Enjoy !!!!
+	- Add new html files under C:\Apache24\htdocs
+	- Access it via www.pranav.com/newhtmlfile. # 
+------------------------------------------------------------------------------
